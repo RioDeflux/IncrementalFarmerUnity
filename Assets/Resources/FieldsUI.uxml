@@ -7,9 +7,27 @@
         <ui:VisualElement name="Body" style="flex-grow: 1; height: 80%; align-items: stretch; flex-direction: column;">
             <ui:VisualElement name="Fields1-2" style="flex-grow: 1; width: auto; height: 50%; flex-direction: row;">
                 <ui:VisualElement name="Field1" style="flex-grow: 1; align-items: flex-start;">
-                    <ui:Label tabindex="-1" text="Field 1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-items: flex-start; font-size: 20px; color: rgb(255, 255, 255);" />
+                    <ui:VisualElement name="TitleContainer" style="flex-grow: 1; flex-direction: row; align-items: flex-start; min-height: 20px; max-height: 40px;">
+                        <ui:Label tabindex="-1" text="Field 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Field1Label" style="align-items: flex-start; font-size: 20px; color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CropName" style="flex-grow: 1; align-self: flex-start; align-items: flex-start; flex-direction: row; width: 100%; height: 20px; min-height: 20px; max-height: 40px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 2px;">
+                        <ui:Label tabindex="-1" text="Crop-Quantity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Crop-Quantity" style="color: rgb(255, 255, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ActionButtons" style="flex-grow: 1; align-self: flex-start; align-items: flex-start; flex-direction: column; max-height: 100px;">
+                        <ui:VisualElement style="flex-grow: 1; flex-direction: row; max-height: 40px;">
+                            <ui:Button text="Plant" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlantButton" style="max-height: 40px; justify-content: center; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(255, 255, 255, 0.3); -unity-font-style: bold; color: rgb(255, 255, 255);" />
+                            <ui:ProgressBar value="22" title="my-progress" name="GrowthProgress" style="width: auto; max-height: 40px; justify-content: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                            <ui:Button text="Automate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AutomateHarvest" style="max-height: 40px; color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.3); -unity-font-style: bold; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                            <ui:Label tabindex="-1" text="£10.00" parse-escape-sequences="true" display-tooltip-when-elided="true" style="max-height: 40px; justify-content: flex-start; color: rgb(255, 255, 255); align-items: center; -unity-text-align: middle-left; font-size: 18px; -unity-font-style: bold;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="UpgradeButtons" style="flex-grow: 1;" />
                 </ui:VisualElement>
-                <ui:VisualElement name="Field2" style="flex-grow: 1;" />
+                <ui:VisualElement name="Field2" style="flex-grow: 1; align-items: flex-start;">
+                    <ui:Label tabindex="-1" text="Field 2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Field2Label" style="align-items: flex-start; font-size: 20px; color: rgb(255, 255, 255); height: 33px; width: 66px;" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Fields3-4" style="flex-grow: 1; height: 50%; flex-direction: row;">
                 <ui:VisualElement name="Field3" style="flex-grow: 1;" />
