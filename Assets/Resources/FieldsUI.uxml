@@ -1,8 +1,20 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(109, 104, 117);">
-        <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; align-items: flex-start;">
-            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuButton" />
-            <ui:Label tabindex="-1" text="The Fields" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TheFields" />
+        <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; align-items: flex-start; height: 20%;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuButton" style="background-image: url(&apos;project://database/Assets/Assets/BackButton-Icon.png?fileID=2800000&amp;guid=5f17fbc8a12ff493c9f18e8c57d09ae8&amp;type=3#BackButton-Icon&apos;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0); border-left-color: rgba(56, 56, 56, 0); border-right-color: rgba(56, 56, 56, 0); border-top-color: rgba(56, 56, 56, 0); border-bottom-color: rgba(56, 56, 56, 0); margin-top: 4px; margin-right: 4px; margin-bottom: 2px; margin-left: 2px; padding-top: 0; padding-right: 20px; padding-bottom: 0; padding-left: 20px; min-width: 30px; min-height: 30px; -unity-text-align: middle-center; height: auto; width: auto;" />
+            <ui:Label tabindex="-1" text="The Fields" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TheFields" style="background-color: rgba(215, 204, 255, 0); color: rgb(255, 255, 255); font-size: 24px; padding-top: 0; padding-bottom: 0; padding-right: 20px; padding-left: 20px; -unity-text-align: middle-left; border-bottom-width: 2px; border-bottom-color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" style="flex-grow: 1; height: 80%; align-items: stretch; flex-direction: column;">
+            <ui:VisualElement name="Fields1-2" style="flex-grow: 1; width: auto; height: 50%; flex-direction: row;">
+                <ui:VisualElement name="Field1" style="flex-grow: 1; align-items: flex-start;">
+                    <ui:Label tabindex="-1" text="Field 1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-items: flex-start; font-size: 20px; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Field2" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Fields3-4" style="flex-grow: 1; height: 50%; flex-direction: row;">
+                <ui:VisualElement name="Field3" style="flex-grow: 1;" />
+                <ui:VisualElement name="Field4" style="flex-grow: 1;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
