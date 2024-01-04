@@ -11,12 +11,12 @@
                         <ui:Label tabindex="-1" text="Field 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Field1Label" style="align-items: flex-start; font-size: 20px; color: rgb(255, 255, 255);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="CropName" style="flex-grow: 1; align-self: flex-start; align-items: flex-start; flex-direction: row; width: 100%; height: 20px; min-height: 20px; max-height: 40px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 2px;">
-                        <ui:Label tabindex="-1" text="Crop-Quantity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Crop-Quantity" style="color: rgb(255, 255, 255);" />
+                        <ui:Label tabindex="-1" text="Crop Quantity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CropQuantity" style="color: rgb(255, 255, 255);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="ActionButtons" style="flex-grow: 1; align-self: flex-start; align-items: flex-start; flex-direction: column; max-height: 100px;">
                         <ui:VisualElement style="flex-grow: 1; flex-direction: row; max-height: 40px;">
                             <ui:Button text="Plant" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlantButton" style="max-height: 40px; justify-content: center; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(255, 255, 255, 0.3); -unity-font-style: bold; color: rgb(255, 255, 255);" />
-                            <ui:ProgressBar value="22" title="my-progress" name="GrowthProgress" style="width: auto; max-height: 40px; justify-content: center;" />
+                            <CustomSlider name="myCustomSlider" minValue="0" maxValue="1" style="width: 200px; height: 20px; background-color: gray;" />
                         </ui:VisualElement>
                         <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
                             <ui:Button text="Automate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AutomateHarvest" style="max-height: 40px; color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.3); -unity-font-style: bold; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
